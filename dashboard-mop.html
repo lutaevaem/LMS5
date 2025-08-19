@@ -7,98 +7,80 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header slim hideable" role="banner">
-  <div class="bar">
-    <a class="brand" href="index.html" aria-label="На главную">
-      <img class="logo" src="logo.jpg" alt="Софт Альянс">
-      <span class="brand-title">Софт Альянс</span>
+<header class="site-header" role="banner">
+  <div class="bar container">
+    <a class="brand" href="index.html" aria-label="Софт Альянс — на главную">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#0ea5e9"/><stop offset="50%" stop-color="#34d399"/><stop offset="100%" stop-color="#6366f1"/></linearGradient></defs>
+        <circle cx="32" cy="32" r="30" fill="url(#g)"/>
+        <path d="M18 38c4 6 10 9 18 9 5 0 9-1 10-2 2-1 2-3 0-4-2-1-7-2-13-2-8 0-12-3-15-7-2-3-2-7 0-10 3-5 9-8 18-8 7 0 12 2 16 5l-4 5c-3-2-7-3-12-3-6 0-10 2-11 4-1 2 0 4 2 5 2 1 6 1 11 1 7 0 13 1 16 3 3 2 4 6 0 10-3 3-9 5-18 5-10 0-17-4-21-10l3-6z" fill="#fff" opacity=".95"/>
+      </svg>
+      <span class="title">Софт Альянс</span>
     </a>
-    <nav class="icon-nav" role="navigation" aria-label="Основные разделы"><a href="index.html" class="icon-link" title="Главная" aria-label="Главная"><span class="i">🏠</span><span class="t">Главная</span></a><a href="products.html" class="icon-link" title="Продукты" aria-label="Продукты"><span class="i">🧩</span><span class="t">Продукты</span></a><a href="crm.html" class="icon-link" title="CRM" aria-label="CRM"><span class="i">🗂️</span><span class="t">CRM</span></a><a href="quickstart.html" class="icon-link" title="Старт" aria-label="Старт"><span class="i">🚀</span><span class="t">Старт</span></a><a href="adaptation.html" class="icon-link" title="Адаптация" aria-label="Адаптация"><span class="i">🧭</span><span class="t">Адаптация</span></a><a href="sales.html" class="icon-link" title="Продажи" aria-label="Продажи"><span class="i">💼</span><span class="t">Продажи</span></a><a href="kpi.html" class="icon-link" title="KPI" aria-label="KPI"><span class="i">📊</span><span class="t">KPI</span></a><a href="tenders.html" class="icon-link" title="Тендеры" aria-label="Тендеры"><span class="i">🏛️</span><span class="t">Тендеры</span></a><a href="dashboard-mop.html" class="icon-link" title="МОП" aria-label="МОП"><span class="i">📈</span><span class="t">МОП</span></a><a href="dashboard-rop.html" class="icon-link" title="РОП" aria-label="РОП"><span class="i">🧠</span><span class="t">РОП</span></a><a href="offer.html" class="icon-link" title="Оффер" aria-label="Оффер"><span class="i">🎁</span><span class="t">Оффер</span></a><a href="offer-self-employed.html" class="icon-link" title="НПД" aria-label="НПД"><span class="i">🧾</span><span class="t">НПД</span></a><a href="mentorship.html" class="icon-link" title="Наставничество" aria-label="Наставничество"><span class="i">📘</span><span class="t">Наставничество</span></a><a href="privacy.html" class="icon-link" title="Политика" aria-label="Политика"><span class="i">⚖️</span><span class="t">Политика</span></a><a href="doc-newbie-book.html" class="icon-link" title="Книга" aria-label="Книга"><span class="i">📚</span><span class="t">Книга</span></a><a href="culture.html" class="icon-link" title="Культура" aria-label="Культура"><span class="i">🤝</span><span class="t">Культура</span></a><a href="test.html" class="icon-link" title="Тест" aria-label="Тест"><span class="i">✅</span><span class="t">Тест</span></a></nav>
   </div>
-  
-  
-      </div>
-    </div>
-    <div class="box" style="grid-column:1 / -1">
-      <h3>Список клиентов</h3>
-      <ol contenteditable="true" data-group="mop" data-key="mop_clients" class="editable">
-        <li>Компания А — посчитать новый запрос</li>
-        <li>Компания Б — уточнить по КП</li>
-        <li>Компания В — уточнить срок закупки</li>
-        <li>Компания Г — уточнить по КП</li>
-        <li>Компания Д — уточнить по КП</li>
-      </ol>
-      <button type="button" data-clear-group="mop">Очистить всё (план, фокус, клиенты)</button>
-    </div>
-  </div>
-  <p class="tip">Подсказка: поля сохраняются только в этом браузере (localStorage), расчётов нет.</p>
-</section>
+  <nav class="icon-nav container" aria-label="Разделы">
+    <a class="icon-link" href="index.html"><span class="i">🏠</span><span class="t">Главная</span></a>
+    <a class="icon-link" href="products.html"><span class="i">🧩</span><span class="t">Продукты</span></a>
+    <a class="icon-link" href="crm.html"><span class="i">🗂️</span><span class="t">CRM</span></a>
+    <a class="icon-link" href="quickstart.html"><span class="i">🚀</span><span class="t">Старт</span></a>
+    <a class="icon-link" href="adaptation.html"><span class="i">🧭</span><span class="t">Адаптация</span></a>
+    <a class="icon-link" href="sales.html"><span class="i">💼</span><span class="t">Продажи</span></a>
+    <a class="icon-link" href="kpi.html"><span class="i">📊</span><span class="t">KPI</span></a>
+    <a class="icon-link" href="tenders.html"><span class="i">🏛️</span><span class="t">Тендеры</span></a>
+    <a class="icon-link" href="dashboard-mop.html"><span class="i">📈</span><span class="t">МОП</span></a>
+    <a class="icon-link" href="dashboard-rop.html"><span class="i">🧠</span><span class="t">РОП</span></a>
+    <a class="icon-link" href="offer.html"><span class="i">🎁</span><span class="t">Оффер</span></a>
+    <a class="icon-link" href="offer-self-employed.html"><span class="i">🧾</span><span class="t">НПД</span></a>
+    <a class="icon-link" href="mentorship.html"><span class="i">📘</span><span class="t">Наставничество</span></a>
+    <a class="icon-link" href="privacy.html"><span class="i">⚖️</span><span class="t">Политика</span></a>
+    <a class="icon-link" href="doc-newbie-book.html"><span class="i">📚</span><span class="t">Книга</span></a>
+    <a class="icon-link" href="culture.html"><span class="i">🤝</span><span class="t">Культура</span></a>
+    <a class="icon-link" href="test.html"><span class="i">✅</span><span class="t">Тест</span></a>
+  </nav>
+</header>
 
+<main class="page-main">
+  <div class="container">
 
-
-<main class="page-main article">
-<!-- МОП дашборд: редактируемые поля с автосохранением -->
-<h1>Дашборд МОП — Софт Альянс</h1>
-<p class="lead">Ежедневный план/факт и приоритеты. Поля ниже редактируются и сохраняются в этом браузере автоматически.</p>
-
-<section class="card">
-  <h2>Сегодня</h2>
-  <div class="grid">
-    <div class="panel"><h3>План дня (звонки / КП / приценки)</h3><div contenteditable="true" data-key="mop.plan.day">40 звонков / 2 КП / 6 приценок</div></div>
-    <div class="panel"><h3>Факт дня</h3><div contenteditable="true" data-key="mop.fact.day">0</div></div>
-    <div class="panel"><h3>Выполнение, %</h3><div contenteditable="true" data-key="mop.complete.day">0</div></div>
-  </div>
-</section>
-
-<section class="card">
-  <h2>Финансы</h2>
-  <div class="grid">
-    <div class="panel"><h3>План месяца, ₽</h3><div contenteditable="true" data-key="mop.plan.month">5 000 000</div></div>
-    <div class="panel"><h3>Факт месяца, ₽</h3><div contenteditable="true" data-key="mop.fact.month">0</div></div>
-    <div class="panel"><h3>Выполнение, %</h3><div contenteditable="true" data-key="mop.complete.month">0</div></div>
-  </div>
-</section>
-
-<section class="card">
-  <h2>Фокус на день</h2>
-  <div contenteditable="true" data-key="mop.focus">Сделать 5 приценок. Цель — 40 звонков.</div>
-</section>
-
-<section class="card">
+<h1>Дашборд МОП</h1>
+<p class="lead">Поля ниже редактируются и сохраняются в этом браузере автоматически.</p>
+<div class="grid cols-3">
+  <div class="panel"><h3>План дня (звонки/КП/приценки)</h3><div contenteditable="true" data-key="mop.plan.day">40 / 2 / 6</div></div>
+  <div class="panel"><h3>Факт дня</h3><div contenteditable="true" data-key="mop.fact.day">0</div></div>
+  <div class="panel"><h3>Выполнение, %</h3><div contenteditable="true" data-key="mop.complete.day">0</div></div>
+</div>
+<div class="grid cols-3">
+  <div class="panel"><h3>План месяца, ₽</h3><div contenteditable="true" data-key="mop.plan.month">5 000 000</div></div>
+  <div class="panel"><h3>Факт месяца, ₽</h3><div contenteditable="true" data-key="mop.fact.month">0</div></div>
+  <div class="panel"><h3>Выполнение, %</h3><div contenteditable="true" data-key="mop.complete.month">0</div></div>
+</div>
+<div class="card">
   <h2>Спринты</h2>
   <table class="table">
-    <thead><tr><th>Время</th><th>План, звонков</th><th>Факт</th><th>База</th></tr></thead>
+    <thead><tr><th>Время</th><th>План звонков</th><th>Факт</th><th>База</th></tr></thead>
     <tbody>
       <tr><td>09:00–12:00</td><td contenteditable="true" data-key="mop.s1.plan">15</td><td contenteditable="true" data-key="mop.s1.fact">0</td><td contenteditable="true" data-key="mop.s1.base">холодная</td></tr>
       <tr><td>12:00–15:00</td><td contenteditable="true" data-key="mop.s2.plan">15</td><td contenteditable="true" data-key="mop.s2.fact">0</td><td contenteditable="true" data-key="mop.s2.base">холодная</td></tr>
       <tr><td>15:00–18:00</td><td contenteditable="true" data-key="mop.s3.plan">10</td><td contenteditable="true" data-key="mop.s3.fact">0</td><td contenteditable="true" data-key="mop.s3.base">холодная</td></tr>
     </tbody>
   </table>
-</section>
-
-<section class="panel">
-  <h2>Список клиентов на сегодня</h2>
+</div>
+<div class="panel">
+  <h2>Фокус и клиенты на сегодня</h2>
+  <p><strong>Фокус:</strong> сделать 5 приценок (цель — 40 звонков).</p>
   <ol>
     <li contenteditable="true" data-key="mop.client.1">МСК Система — посчитать новый запрос</li>
     <li contenteditable="true" data-key="mop.client.2">Агротеххолдинг — уточнить по КП</li>
     <li contenteditable="true" data-key="mop.client.3">Инфосага — уточнить сроки закупки</li>
-    <li contenteditable="true" data-key="mop.client.4">Смартика — уточнить по КП</li>
-    <li contenteditable="true" data-key="mop.client.5">Югра Экология — уточнить по КП</li>
   </ol>
-  <p><strong>Цель дня:</strong> актуализировать статусы по оплатам и КП, проработать сделки коллег.</p>
-</section>
-
-<section class="note"><h2>Подсказка</h2><p>Подробности фиксируйте в CRM. Эти поля — для оперативной работы в течение дня.</p></section>
-
-</main>
+</div>
 <script>(function(){function r(e){var k=e.getAttribute('data-key');if(!k)return;var v=localStorage.getItem(k);if(v!==null)e.innerHTML=v;}function b(e){var k=e.getAttribute('data-key');if(!k)return;e.addEventListener('input',function(){localStorage.setItem(k,e.innerHTML);});}document.querySelectorAll('[contenteditable][data-key]').forEach(function(e){r(e);b(e);});})();</script>
+
+  </div>
 </main>
-
-
-
-
-
-
-
+<footer>
+  <div class="container">© Софт Альянс. Простые решения о сложном IT. </div>
+</footer>
 </body>
 </html>
