@@ -34,6 +34,64 @@
   <p class="tip">Подсказка: поля сохраняются только в этом браузере (localStorage), расчётов нет.</p>
 </section>
 
+
+
+<main class="page-main article">
+<!-- МОП дашборд: редактируемые поля с автосохранением -->
+<h1>Дашборд МОП — Софт Альянс</h1>
+<p class="lead">Ежедневный план/факт и приоритеты. Поля ниже редактируются и сохраняются в этом браузере автоматически.</p>
+
+<section class="card">
+  <h2>Сегодня</h2>
+  <div class="grid">
+    <div class="panel"><h3>План дня (звонки / КП / приценки)</h3><div contenteditable="true" data-key="mop.plan.day">40 звонков / 2 КП / 6 приценок</div></div>
+    <div class="panel"><h3>Факт дня</h3><div contenteditable="true" data-key="mop.fact.day">0</div></div>
+    <div class="panel"><h3>Выполнение, %</h3><div contenteditable="true" data-key="mop.complete.day">0</div></div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Финансы</h2>
+  <div class="grid">
+    <div class="panel"><h3>План месяца, ₽</h3><div contenteditable="true" data-key="mop.plan.month">5 000 000</div></div>
+    <div class="panel"><h3>Факт месяца, ₽</h3><div contenteditable="true" data-key="mop.fact.month">0</div></div>
+    <div class="panel"><h3>Выполнение, %</h3><div contenteditable="true" data-key="mop.complete.month">0</div></div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Фокус на день</h2>
+  <div contenteditable="true" data-key="mop.focus">Сделать 5 приценок. Цель — 40 звонков.</div>
+</section>
+
+<section class="card">
+  <h2>Спринты</h2>
+  <table class="table">
+    <thead><tr><th>Время</th><th>План, звонков</th><th>Факт</th><th>База</th></tr></thead>
+    <tbody>
+      <tr><td>09:00–12:00</td><td contenteditable="true" data-key="mop.s1.plan">15</td><td contenteditable="true" data-key="mop.s1.fact">0</td><td contenteditable="true" data-key="mop.s1.base">холодная</td></tr>
+      <tr><td>12:00–15:00</td><td contenteditable="true" data-key="mop.s2.plan">15</td><td contenteditable="true" data-key="mop.s2.fact">0</td><td contenteditable="true" data-key="mop.s2.base">холодная</td></tr>
+      <tr><td>15:00–18:00</td><td contenteditable="true" data-key="mop.s3.plan">10</td><td contenteditable="true" data-key="mop.s3.fact">0</td><td contenteditable="true" data-key="mop.s3.base">холодная</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="panel">
+  <h2>Список клиентов на сегодня</h2>
+  <ol>
+    <li contenteditable="true" data-key="mop.client.1">МСК Система — посчитать новый запрос</li>
+    <li contenteditable="true" data-key="mop.client.2">Агротеххолдинг — уточнить по КП</li>
+    <li contenteditable="true" data-key="mop.client.3">Инфосага — уточнить сроки закупки</li>
+    <li contenteditable="true" data-key="mop.client.4">Смартика — уточнить по КП</li>
+    <li contenteditable="true" data-key="mop.client.5">Югра Экология — уточнить по КП</li>
+  </ol>
+  <p><strong>Цель дня:</strong> актуализировать статусы по оплатам и КП, проработать сделки коллег.</p>
+</section>
+
+<section class="note"><h2>Подсказка</h2><p>Подробности фиксируйте в CRM. Эти поля — для оперативной работы в течение дня.</p></section>
+
+</main>
+<script>(function(){function r(e){var k=e.getAttribute('data-key');if(!k)return;var v=localStorage.getItem(k);if(v!==null)e.innerHTML=v;}function b(e){var k=e.getAttribute('data-key');if(!k)return;e.addEventListener('input',function(){localStorage.setItem(k,e.innerHTML);});}document.querySelectorAll('[contenteditable][data-key]').forEach(function(e){r(e);b(e);});})();</script>
 </main>
 
 
