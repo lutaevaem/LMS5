@@ -1,0 +1,359 @@
+/* Основные цвета и типографика */
+:root {
+  --primary: #004e8c;
+  --secondary: #2ca84a;
+  --light: #f8f9fa;
+  --text: #333;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: var(--light);
+  color: var(--text);
+}
+header {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+header img.hero {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+header p.subtitle {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+nav {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav a {
+  color: #fff;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+nav a:hover {
+  background-color: var(--secondary);
+}
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+main h2 {
+  color: var(--primary);
+  border-bottom: 3px solid var(--secondary);
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+main ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+main ol {
+  margin-left: 1.5rem;
+}
+footer {
+  background-color: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header p.subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Заголовок обычных страниц */
+.page-header {
+  background-color: var(--primary);
+  color:#0f172a;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* Slim icon header */
+:root{ --brand-blue:#1E40AF; --emerald-light:#A7F3D0; --blueviolet-light:#C7D2FE; --border:#E5E7EB; --bg:#F8FAFC; }
+body{ background: var(--bg); }
+.site-header.slim{ position:sticky; top:0; z-index:3500; background:#fff; border-bottom:1px solid var(--border); box-shadow:0 8px 24px rgba(2,6,23,.06); transform:translateY(0); transition:transform .22s ease }
+.site-header.slim.hide{ transform: translateY(-100%) }
+.site-header.slim::after{ content:""; display:block; height:2px; background: linear-gradient(90deg, var(--brand-blue), var(--emerald-light), var(--blueviolet-light)); }
+.site-header .bar{ display:flex; align-items:center; justify-content:space-between; gap:.5rem; padding:.35rem clamp(10px,2vw,20px) }
+.brand{ display:flex; align-items:center; gap:.5rem; text-decoration:none }
+.brand .logo{ height:28px; width:auto; padding:2px; background:#fff; border:1px solid var(--border); border-radius:6px; display:block }
+.brand .brand-title{ font-weight:800; color:#0f172a; font-size:1rem }
+
+.icon-nav{ display:flex; align-items:center; gap:.35rem }
+.icon-nav a, .icon-nav .iconbtn{ display:inline-flex; align-items:center; justify-content:center; width:38px; height:38px; border-radius:.55rem; border:1px solid var(--border); background:#fff; color:#1E40AF }
+.icon-nav .ico{ width:20px; height:20px; display:block }
+.icon-nav svg, .icon-nav svg *{ stroke: currentColor !important; fill:none !important; stroke-width: 1.8 !important }
+.icon-nav a:hover, .icon-nav .iconbtn:hover{ box-shadow:0 6px 16px rgba(2,6,23,.1) }
+.icon-nav a:active, .icon-nav .iconbtn:active{ transform: translateY(1px) }
+.icon-nav a.active{ background-image: linear-gradient(135deg, #E7FFF4, #E6ECFF); border-color:#C7D2FE; color:#065F46 }
+
+/* Panel */
+.sections-panel{ position:fixed; left:0; right:0; top:50px; bottom:0; background: rgba(15,23,42,.04); backdrop-filter: blur(2px) }
+.sections-panel[hidden]{ display:block; opacity:0; pointer-events:none; transform: translateY(-4px) }
+.panel-inner{ position:absolute; left:clamp(8px,2vw,24px); right:clamp(8px,2vw,24px); top:8px; bottom:8px; background:#fff; border:1px solid var(--border); border-radius:12px; box-shadow: 0 18px 48px rgba(2,6,23,.16); display:flex; flex-direction:column; overflow:hidden }
+.panel-head{ display:flex; align-items:center; gap:.5rem; padding:.6rem .75rem; border-bottom:1px solid var(--border); background: linear-gradient(90deg, rgba(30,64,175,.06), rgba(16,185,129,.06), rgba(99,102,241,.06)) }
+.panel-head input[type="search"]{ flex:1; border:1px solid var(--border); border-radius:.5rem; padding:.45rem .5rem; background:#fff }
+.panel-body{ flex:1; overflow:auto; padding:.7rem .8rem; display:grid; gap:.75rem }
+.sec-group h4{ margin:.2rem 0 .3rem; color:#1f2937 }
+.sec-links{ display:flex; flex-wrap:wrap; gap:.35rem .4rem }
+.sec-links a{ padding:.45rem .6rem; border-radius:.6rem; border:1px solid var(--border); background:#fff; font-weight:600; text-decoration:none }
+.sec-links a:hover{ background-image: linear-gradient(135deg, rgba(167,243,208,.35), rgba(199,210,254,.35)); box-shadow: 0 6px 16px rgba(2,6,23,.08) }
+.sec-links a.active{ background-image: linear-gradient(135deg, #A7F3D0, #C7D2FE) }
+
+/* Page search strip */
+.page-search{ background:#fff; border-bottom:1px solid var(--border); padding:.35rem clamp(10px,2vw,20px); display:flex; gap:.4rem }
+#pageSearchInput{ flex:1; border:1px solid var(--border); border-radius:.55rem; padding:.45rem .5rem; background:#fff }
+
+/* Emergency Black Text (duplicated in head per page as well) */
+body{ color:#000 }
+
+
+/* === Light Grey → White Gradient for Blocks (v8) === */
+:root{ --sa-grad-start:#F3F4F6; --sa-grad-end:#FFFFFF; --sa-border:#E5E7EB; }
+/* Apply only to content blocks, not header */
+.card, .callout, .value, .metric-card, .panel, .box,
+.section, .section-light, .band, .stripe, .ribbon, .banner,
+.content-block, .info, .note, .tip, .faq, .hero-light {
+  background: linear-gradient(180deg, var(--sa-grad-start) 0%, var(--sa-grad-end) 100%) !important;
+  border: 1px solid var(--sa-border);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(2,6,23,.04);
+}
+/* Keep search bar & TOC clean white for readability */
+.page-search, .toc, .toc summary{ background:#fff !important }
+/* Tables on light gradient stay readable */
+table, .table, .table-wrap{ background: transparent; }
+
+
+/* === Layout Stabilize v9 === */
+html{ box-sizing: border-box }
+*, *::before, *::after{ box-sizing: inherit }
+body{ margin:0 }
+
+/* Consistent left/right padding for common wrappers */
+main, .page-main, .container, .wrap, .content, .article,
+.section, .section-light, .band, .stripe, .panel, .box, .card, .callout {
+  padding-left: clamp(12px, 3.5vw, 28px);
+  padding-right: clamp(12px, 3.5vw, 28px);
+}
+
+/* Ensure first content block doesn't stick to header */
+#content + *{ margin-top: .75rem; }
+
+/* Comfortable reading width for long text */
+.article, .prose, .page-main, main, .content {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive media */
+img, video{ max-width:100%; height:auto; }
+figure{ margin: 0; }
+iframe{ max-width:100% }
+
+/* Tables: avoid horizontal overflow issues */
+.table-wrap{ overflow-x:auto; -webkit-overflow-scrolling: touch }
+table{ width:100%; border-collapse: collapse }
+th, td{ padding:.5rem; border:1px solid #E5E7EB }
+
+/* Anchors: offset for sticky header */
+[id]{ scroll-margin-top: 72px }
+
+
+/* === Scoped Readability v9.1 (content-only) === */
+:root{
+  --sa-text:#0f172a;
+  --sa-strong:#0b1220;
+  --sa-link:#1E40AF;
+  --sa-border:#E5E7EB;
+  --sa-grad-start:#F3F4F6;
+  --sa-grad-end:#FFFFFF;
+}
+
+/* Content containers only */
+main, .page-main, .content, .article{
+  color: var(--sa-text);
+}
+main h1, main h2, main h3, main h4, main h5, main h6,
+.page-main h1, .page-main h2, .page-main h3, .page-main h4, .page-main h5, .page-main h6,
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6,
+.article h1, .article h2, .article h3, .article h4, .article h5, .article h6{
+  color: var(--sa-strong);
+  text-shadow: none;
+}
+
+/* Links (brand) — внутри контента */
+main a, .page-main a, .content a, .article a{
+  color: var(--sa-link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+main a:hover, .page-main a:hover, .content a:hover, .article a:hover{
+  text-decoration-thickness: 2px;
+}
+
+/* Light grey → white gradients for content blocks */
+.card, .callout, .value, .metric-card, .panel, .box,
+.section, .section-light, .band, .stripe, .ribbon, .banner,
+.content-block, .info, .note, .tip, .faq, .hero-light {
+  background: linear-gradient(180deg, var(--sa-grad-start) 0%, var(--sa-grad-end) 100%);
+  border: 1px solid var(--sa-border);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(2,6,23,.04);
+  color: var(--sa-text);
+}
+
+/* Keep header/nav/icon palette untouched */
+.site-header, .icon-nav, .brand, .brand .logo, .icon-nav a, .icon-nav .iconbtn, .icon-nav svg, .icon-nav .ico {
+  /* no overrides here to avoid regressions */
+}
+
+/* TOC & search remain light */
+.toc, .toc summary, .page-search{ background:#fff; color:var(--sa-text); border:1px solid var(--sa-border) }
+#pageSearchInput{ background:#fff; color:var(--sa-text) }
+
+
+/* === Brand Beauty Background v10 (for v9.1 base) === */
+:root{
+  --brand-blue:#1E40AF;
+  --emerald:#10B981;
+  --emerald-light:#A7F3D0;
+  --violet-light:#C7D2FE;
+  --bg-top:#F8FAFC;
+  --bg-bottom:#FFFFFF;
+  --border:#E5E7EB;
+}
+html, body{ height:100% }
+body{
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(30,64,175,.10), transparent 60%),
+    radial-gradient(1000px 500px at 90% 110%, rgba(16,185,129,.10), transparent 60%),
+    linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+  background-attachment: fixed;
+}
+
+/* Subtle hover for blocks */
+.card, .panel, .box, .section, .section-light, .band, .stripe, .ribbon, .banner,
+.content-block, .info, .note, .tip, .faq, .hero-light, .metric-card {
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.card:hover, .panel:hover, .box:hover, .section:hover, .note:hover, .tip:hover, .faq:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(2,6,23,.09);
+}
+
+/* Header clarity */
+.site-header.slim{ background:#fff; }
+
+/* Focus-visible */
+a:focus-visible, button:focus-visible, [role="button"]:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible{
+  outline: 2px solid var(--brand-blue);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* TOC polish */
+.toc.auto{ margin: .5rem 0 1rem; border:1px solid var(--border); border-radius: 10px; background: #fff; }
+.toc.auto details{ padding:.4rem .6rem }
+.toc.auto .toc-list{ margin:.35rem 0 .2rem; }
+
+/* Active icon look */
+.icon-nav a.active{
+  background-image: linear-gradient(135deg, #E7FFF4, #E6ECFF);
+  border-color:#C7D2FE;
+  color:#065F46;
+  box-shadow: 0 8px 18px rgba(30,64,175,.12);
+}
+
+.article, .page-main, main{ color:#0f172a }
+
+
+/* Ensure hidden panels never overlay header */
+#sectionsPanel[hidden], .page-search[hidden] { display:none !important; }
+.sections-panel.open { display:block; position:fixed; left:0; right:0; top:64px; z-index:3100; }
+.icon-nav a { pointer-events:auto; }
+
+
+/* SAFE MODE: static header/nav and TOC */
+body{margin:0}
+.site-header{position:sticky;top:0;z-index:4000;background:linear-gradient(180deg,#f8fafc,#ffffff)}
+.icon-nav{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;overflow-x:auto;padding:8px 10px;border-bottom:1px solid rgba(2,6,23,.06)}
+.icon-nav .icon-link{display:flex;flex-direction:column;align-items:center;min-width:56px;text-decoration:none}
+.icon-nav .icon-link .i{font-size:20px;line-height:20px}
+.icon-nav .icon-link .t{font-size:11px;color:#0f172a;line-height:12px;margin-top:2px;white-space:nowrap}
+.icon-nav .icon-link:hover,.icon-nav .icon-link:focus{outline:2px solid rgba(15,23,42,.15);outline-offset:2px;border-radius:8px}
+.static-toc{max-width:1160px;margin:0 auto;padding:8px 16px}
+.static-toc details{background:linear-gradient(180deg,#ffffff,#f7fbff);border:1px solid rgba(2,6,23,.06);border-radius:12px;padding:8px 12px}
+.static-toc .toc-columns{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.static-toc h4{margin:.25rem 0 .25rem 0}
+.static-toc a{color:#0f172a}
+/* Dashboards — prevent truncation */
+.page-main{min-height:calc(100vh - 96px)}
+.dash-grid,.board,.dashboard{max-width:1200px;margin:0 auto;width:100%;overflow:visible}
+.card,[contenteditable]{min-height:1.6em}
+
+
+/* Collapsed site TOC by default */
+.static-toc details{background:linear-gradient(180deg,#ffffff,#f7fbff);border:1px solid rgba(2,6,23,.06);border-radius:12px;padding:6px 10px}
+.static-toc summary{cursor:pointer;font-weight:600}
+.static-toc summary::marker{content:""}
+.static-toc summary::after{content:"▸";display:inline-block;margin-left:.35rem;transform:translateY(-1px)}
+.static-toc details[open] summary::after{content:"▾"}
+/* Header and icon bar */
+.site-header{position:sticky;top:0;z-index:4000;background:linear-gradient(180deg,#f8fafc,#ffffff)}
+.icon-nav{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;overflow-x:auto;padding:8px 10px;border-bottom:1px solid rgba(2,6,23,.06)}
+.icon-nav .icon-link{display:flex;flex-direction:column;align-items:center;min-width:56px;text-decoration:none}
+.icon-nav .icon-link .i{font-size:20px;line-height:20px}
+.icon-nav .icon-link .t{font-size:11px;color:#0f172a;line-height:12px;margin-top:2px;white-space:nowrap}
+.icon-nav .icon-link:hover,.icon-nav .icon-link:focus{outline:2px solid rgba(15,23,42,.15);outline-offset:2px;border-radius:8px}
+/* Layout */
+.page-main{padding-top:88px;min-height:calc(100vh - 96px)}
+.dash-grid,.board,.dashboard{max-width:1200px;margin:0 auto;width:100%;overflow:visible}
+/* Remove any accidental overlay panels */
+#sectionsPanel, #pageSearch{display:none!important}
+
+
+/* Text visibility hardening */
+body, .article, .panel, .card, .page-main, main { color:#0f172a; }
+h1,h2,h3,h4,h5,h6 { color:#0f172a; }
+#sectionsPanel, #pageSearch { display:none !important; visibility:hidden !important; height:0 !important; }
+/* Ensure content area has room */
+.page-main { padding-top: 88px; min-height: calc(100vh - 96px); }
