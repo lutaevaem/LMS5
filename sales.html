@@ -1,135 +1,47 @@
-<!DOCTYPE html><html lang="ru"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Продажи — Софт Альянс</title>
-<link rel="stylesheet" href="style.css"></head><body>
-<header class="site-header" role="banner">
-  <div class="bar container">
-    <a class="brand" href="index.html" aria-label="Софт Альянс — на главную">
-      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
-        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#0ea5e9"/><stop offset="50%" stop-color="#34d399"/><stop offset="100%" stop-color="#6366f1"/></linearGradient></defs>
-        <circle cx="32" cy="32" r="30" fill="url(#g)"/>
-        <path d="M18 38c4 6 10 9 18 9 5 0 9-1 10-2 2-1 2-3 0-4-2-1-7-2-13-2-8 0-12-3-15-7-2-3-2-7 0-10 3-5 9-8 18-8 7 0 12 2 16 5l-4 5c-3-2-7-3-12-3-6 0-10 2-11 4-1 2 0 4 2 5 2 1 6 1 11 1 7 0 13 1 16 3 3 2 4 6 0 10-3 3-9 5-18 5-10 0-17-4-21-10l3-6z" fill="#fff" opacity=".95"/>
-      </svg>
-      <span class="title">Софт Альянс</span>
+<!DOCTYPE html><html lang='ru'><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sales — Софт Альянс</title>
+  <link rel="stylesheet" href="style.css">
+</head><body>
+<header class="site-header slim hideable" role="banner">
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="На главную">
+      <img class="logo" src="logo.jpg" alt="Софт Альянс">
+      <span class="brand-title">Софт Альянс</span>
     </a>
+    <nav class="icon-nav" role="navigation" aria-label="Основные разделы">
+      <a href="index.html" class="icon-link" title="Главная" aria-label="Главная"><span class="i">🏠</span><span class="t">Главная</span></a>
+      <a href="products.html" class="icon-link" title="Продукты" aria-label="Продукты"><span class="i">🧩</span><span class="t">Продукты</span></a>
+      <a href="crm.html" class="icon-link" title="CRM" aria-label="CRM"><span class="i">🗂️</span><span class="t">CRM</span></a>
+      <a href="quickstart.html" class="icon-link" title="Старт" aria-label="Старт"><span class="i">🚀</span><span class="t">Старт</span></a>
+      <a href="adaptation.html" class="icon-link" title="Адаптация" aria-label="Адаптация"><span class="i">🧭</span><span class="t">Адаптация</span></a>
+      <a href="sales.html" class="icon-link" title="Продажи" aria-label="Продажи"><span class="i">💼</span><span class="t">Продажи</span></a>
+      <a href="kpi.html" class="icon-link" title="KPI" aria-label="KPI"><span class="i">📊</span><span class="t">KPI</span></a>
+      <a href="tenders.html" class="icon-link" title="Тендеры" aria-label="Тендеры"><span class="i">🏛️</span><span class="t">Тендеры</span></a>
+      <a href="dashboard-mop.html" class="icon-link" title="МОП" aria-label="МОП"><span class="i">📈</span><span class="t">МОП</span></a>
+      <a href="dashboard-rop.html" class="icon-link" title="РОП" aria-label="РОП"><span class="i">🧠</span><span class="t">РОП</span></a>
+      <a href="offer.html" class="icon-link" title="Оффер" aria-label="Оффер"><span class="i">🎁</span><span class="t">Оффер</span></a>
+      <a href="offer-self-employed.html" class="icon-link" title="НПД" aria-label="НПД"><span class="i">🧾</span><span class="t">НПД</span></a>
+      <a href="mentorship.html" class="icon-link" title="Наставничество" aria-label="Наставничество"><span class="i">📘</span><span class="t">Наставничество</span></a>
+      <a href="privacy.html" class="icon-link" title="Политика" aria-label="Политика"><span class="i">⚖️</span><span class="t">Политика</span></a>
+      <a href="doc-newbie-book.html" class="icon-link" title="Книга" aria-label="Книга"><span class="i">📚</span><span class="t">Книга</span></a>
+      <a href="culture.html" class="icon-link" title="Культура" aria-label="Культура"><span class="i">🤝</span><span class="t">Культура</span></a>
+      <a href="test.html" class="icon-link" title="Тест" aria-label="Тест"><span class="i">✅</span><span class="t">Тест</span></a>
+    </nav>
   </div>
-  <nav class="icon-nav container" aria-label="Разделы">
-    <a class="icon-link" href="index.html"><span class="i">🏠</span><span class="t">Главная</span></a>
-    <a class="icon-link" href="products.html"><span class="i">🧩</span><span class="t">Продукты</span></a>
-    <a class="icon-link" href="crm.html"><span class="i">🗂️</span><span class="t">CRM</span></a>
-    <a class="icon-link" href="quickstart.html"><span class="i">🚀</span><span class="t">Старт</span></a>
-    <a class="icon-link" href="adaptation.html"><span class="i">🧭</span><span class="t">Адаптация</span></a>
-    <a class="icon-link" href="sales.html"><span class="i">💼</span><span class="t">Продажи</span></a>
-    <a class="icon-link" href="kpi.html"><span class="i">📊</span><span class="t">KPI</span></a>
-    <a class="icon-link" href="tenders.html"><span class="i">🏛️</span><span class="t">Тендеры</span></a>
-    <a class="icon-link" href="dashboard-mop.html"><span class="i">📈</span><span class="t">МОП</span></a>
-    <a class="icon-link" href="dashboard-rop.html"><span class="i">🧠</span><span class="t">РОП</span></a>
-    <a class="icon-link" href="offer.html"><span class="i">🎁</span><span class="t">Оффер</span></a>
-    <a class="icon-link" href="offer-self-employed.html"><span class="i">🧾</span><span class="t">НПД</span></a>
-    <a class="icon-link" href="mentorship.html"><span class="i">📘</span><span class="t">Наставничество</span></a>
-    <a class="icon-link" href="privacy.html"><span class="i">⚖️</span><span class="t">Политика</span></a>
-    <a class="icon-link" href="doc-newbie-book.html"><span class="i">📚</span><span class="t">Книга</span></a>
-    <a class="icon-link" href="culture.html"><span class="i">🤝</span><span class="t">Культура</span></a>
-    <a class="icon-link" href="test.html"><span class="i">✅</span><span class="t">Тест</span></a>
-  </nav>
 </header>
-
-<main class="page-main"><div class="container">
-<h1>Продажи: полный конструктор</h1>
-<p class="lead">Цель — системная, предсказуемая воронка. Ниже — этапы, контрольные вопросы и «артефакты».</p>
-<section class="card">
-  <h2>1. Контакт</h2>
-  <ul>
-    <li><strong>Do:</strong> «Здравствуйте, это Софт Альянс… Удобно 2 минуты?»</li>
-    <li><strong>Don’t:</strong> длинная презентация «про себя» до вопросов.</li>
-    <li><strong>Артефакт:</strong> задача «перезвонить/встреча» в CRM (дата/время).</li>
-  </ul>
-</section>
-<section class="card">
-  <h2>2. Потребности</h2>
-  <p>5–7 вопросов: ситуация, критерии успеха, сроки, бюджет, ЛПР, риски.</p>
-</section>
-<section class="card">
-  <h2>3. Презентация</h2>
-  <p>Решение на языке результата + TCO. Сравнение вариантов по цене/срокам/рискам.</p>
-</section>
-<section class="card">
-  <h2>4. Возражения</h2>
-  <table class="table">
-    <thead><tr><th>Фраза клиента</th><th>Ответ</th></tr></thead>
-    <tbody>
-      <tr><td>«Дорого»</td><td>Сравниваем TCO и риски эксплуатации.</td></tr>
-      <tr><td>«Подумаем»</td><td>Уточняем, что именно взвесить, назначаем короткий слот.</td></tr>
-      <tr><td>«Есть поставщик»</td><td>Предлагаем пилот и усиление сроками/сервисом.</td></tr>
-    </tbody>
-  </table>
-</section>
-<section class="card">
-  <h2>5–6. Закрытие и сопровождение</h2>
-  <p>КП до 17:00 → созвон завтра 11:00; затем контроль поставки/оплаты, NPS.</p>
-</section>
-<p>Шпаргалки — в <a href="doc-sales-script.html">«Скрипте продаж»</a>.</p>
-
-
-<section class="card">
-  <h2>Мини‑скрипты по этапам (на примере Microsoft 365)</h2>
-  <ol>
-    <li><strong>Контакт:</strong> «Софт Альянс, работаем с лицензиями Microsoft. Удобно 2 минуты?»</li>
-    <li><strong>Потребности:</strong> «Сколько пользователей? Где храните файлы? Какая почта? Что сейчас не устраивает?»</li>
-    <li><strong>Презентация:</strong> «M365 решает: единая почта/файлы/коммуникации, контроль доступа. Предложу 2 тарифа — Basic/Standard».</li>
-    <li><strong>Возражения:</strong> «Дорого» → «Сравним с текущими затратами и рисками потерь данных — обычно экономия на поддержке».</li>
-    <li><strong>Закрытие:</strong> «Отправлю КП сегодня до 17:00 и короткий слот завтра на 11:00 — согласуем».</li>
-  </ol>
-</section>
-</div>
-<section class="card">
-  <h2>Мини‑кейсы по продуктам Microsoft</h2>
-  <table class="table">
-    <thead><tr><th>Ситуация</th><th>Вопросы диагностики</th><th>Решение</th><th>Ценность/результат</th></tr></thead>
-    <tbody>
-      <tr>
-        <td>Хаос в коммуникациях и файлах</td>
-        <td>Где почта? Где общие файлы? Кто имеет доступ?</td>
-        <td>M365 Business Standard (Teams, Exchange, SharePoint, OneDrive)</td>
-        <td>Единая среда, доступы по ролям, меньше потерь времени</td>
-      </tr>
-      <tr>
-        <td>Старые ПК/Windows, риски</td>
-        <td>Какие версии? Какие критичные приложения?</td>
-        <td>Windows 11 Pro/Enterprise + план миграции</td>
-        <td>Стабильность, безопасность, поддержка устройств</td>
-      </tr>
-      <tr>
-        <td>Нет резервного копирования</td>
-        <td>Есть ли бэкапы? SLA восстановления?</td>
-        <td>Azure Backup/Storage + политика бэкапов</td>
-        <td>Быстрый откат, снижение простоя</td>
-      </tr>
-      <tr>
-        <td>Увеличилось число инцидентов</td>
-        <td>Антивирус? EDR? Управление патчами?</td>
-        <td>Microsoft Defender + полисы безопасности M365</td>
-        <td>Меньше инцидентов, комплаенс</td>
-      </tr>
-      <tr>
-        <td>Нужна CRM и аналитика</td>
-        <td>Как ведёте сделки? Какие отчёты нужны?</td>
-        <td>Dynamics 365 + Power BI</td>
-        <td>Прозрачная воронка, предсказуемость выручки</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
-<section class="panel">
-  <h2>Формулировки ценности (можно читать с экрана)</h2>
-  <ul>
-    <li><strong>M365:</strong> «Соберём почту, файлы и переговоры в одну среду. Меньше хаоса — быстрее работа».</li>
-    <li><strong>Windows 11:</strong> «Миграция по отделам, без простоя. Стабильность и безопасность из коробки».</li>
-    <li><strong>Azure Backup:</strong> «Если что‑то случится — восстановимся за часы, а не дни».</li>
-    <li><strong>Defender:</strong> «Защитим устройства и почту, инцидентов станет меньше».</li>
-    <li><strong>Surface:</strong> «Мобильность и качество встреч. Впечатление для руководителей и пресейлов».</li>
-  </ul>
-</section>
-</main>
-<footer><div class="container">© Софт Альянс. Простые решения о сложном IT.</div></footer></body></html>
+<main class='page-main'><div class='container'>
+<h1>Продажи — Софт Альянс</h1>
+<section class="card"><h2>Этапы</h2>
+<ol><li>Контакт</li><li>Потребности</li><li>Презентация</li><li>Возражения</li><li>Закрытие</li><li>Сопровождение</li></ol></section>
+<section class="panel"><h2>Мини‑кейсы Microsoft</h2>
+<table class="table"><thead><tr><th>Ситуация</th><th>Диагностика</th><th>Решение</th><th>Эффект</th></tr></thead>
+<tbody>
+<tr><td>Хаос в коммуникациях</td><td>Почта? Файлы? Доступы?</td><td>M365 (Teams/Exchange/SharePoint)</td><td>Единая среда, меньше потерь</td></tr>
+<tr><td>Старые ПК/риски</td><td>Версии Windows? Критичные приложения?</td><td>Windows 11 миграция</td><td>Стабильность и безопасность</td></tr>
+<tr><td>Нет бэкапов</td><td>Есть резерв? SLA восстановления?</td><td>Azure Backup</td><td>Откат за часы, а не дни</td></tr>
+<tr><td>Инциденты растут</td><td>Антивирус/EDR? Патчи?</td><td>Microsoft Defender + полисы</td><td>Меньше инцидентов</td></tr>
+</tbody></table></section>
+<section class="note"><strong>CTA:</strong> назначь звонки‑обратную связь по двум КП, зафиксируй следующий шаг.</section>
+</div></main></body></html>
