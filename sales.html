@@ -1,8 +1,9 @@
 <!DOCTYPE html><html lang='ru'><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>sales — Софт Альянс</title>
+  <title>sales</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tone.css">
 </head><body>
 <header class="site-header slim hideable" role="banner">
   <div class="bar">
@@ -29,19 +30,14 @@
       <a href="culture.html" class="icon-link" title="Культура" aria-label="Культура"><span class="i">🤝</span><span class="t">Культура</span></a>
       <a href="test.html" class="icon-link" title="Тест" aria-label="Тест"><span class="i">✅</span><span class="t">Тест</span></a>
     </nav>
+    <div class="tone-switch" role="group" aria-label="Переключатель тона">
+      <span class="tone-label">Тон:</span>
+      <button class="tone-btn" data-tone="friendly" aria-pressed="true">🙂 Дружелюбно</button>
+      <button class="tone-btn" data-tone="performance" aria-pressed="false">⚡ Результативно</button>
+    </div>
   </div>
 </header>
 <main class='page-main'><div class='container'>
 <h1>Продажи — Софт Альянс</h1>
-<section class="card"><h2>Этапы</h2>
-<ol><li>Контакт</li><li>Потребности</li><li>Презентация</li><li>Возражения</li><li>Закрытие</li><li>Сопровождение</li></ol></section>
-<section class="panel"><h2>Мини‑кейсы Microsoft</h2>
-<table class="table"><thead><tr><th>Ситуация</th><th>Диагностика</th><th>Решение</th><th>Эффект</th></tr></thead>
-<tbody>
-<tr><td>Хаос в коммуникациях</td><td>Почта? Файлы? Доступы?</td><td>M365 (Teams/Exchange/SharePoint)</td><td>Единая среда, меньше потерь</td></tr>
-<tr><td>Старые ПК/риски</td><td>Версии Windows? Критичные приложения?</td><td>Windows 11 миграция</td><td>Стабильность и безопасность</td></tr>
-<tr><td>Нет бэкапов</td><td>Есть резерв? SLA восстановления?</td><td>Azure Backup</td><td>Откат за часы, а не дни</td></tr>
-<tr><td>Инциденты растут</td><td>Антивирус/EDR? Патчи?</td><td>Microsoft Defender + полисы</td><td>Меньше инцидентов</td></tr>
-</tbody></table></section>
-<section class="note"><strong>CTA:</strong> назначь звонки‑обратную связь по двум КП, зафиксируй следующий шаг.</section>
-</div></main></body></html>
+<section class="card"><h2>Мини‑кейсы Microsoft</h2><div class='tone-block tone-friendly'><ul><li>M365: «Соберём почту и файлы в одной удобной среде».</li><li>Windows 11: «Компьютеры станут стабильнее и безопаснее».</li><li>Azure Backup: «Если что-то случится — быстро восстановим».</li></ul></div><div class='tone-block tone-performance'><table class='table'><thead><tr><th>Ситуация</th><th>Метрика</th><th>Решение</th></tr></thead><tbody><tr><td>Хаос в коммуникациях</td><td>−20–40% времени</td><td>M365</td></tr><tr><td>Старые ПК/инциденты</td><td>−30% инцидентов</td><td>Windows 11 + политики</td></tr><tr><td>Нет резервов</td><td>RTO — часы</td><td>Azure Backup</td></tr></tbody></table></div></section>
+</div></main><script src='tone.js' defer></script></body></html>

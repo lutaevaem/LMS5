@@ -1,8 +1,9 @@
 <!DOCTYPE html><html lang='ru'><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>culture — Софт Альянс</title>
+  <title>culture</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tone.css">
 </head><body>
 <header class="site-header slim hideable" role="banner">
   <div class="bar">
@@ -29,12 +30,14 @@
       <a href="culture.html" class="icon-link" title="Культура" aria-label="Культура"><span class="i">🤝</span><span class="t">Культура</span></a>
       <a href="test.html" class="icon-link" title="Тест" aria-label="Тест"><span class="i">✅</span><span class="t">Тест</span></a>
     </nav>
+    <div class="tone-switch" role="group" aria-label="Переключатель тона">
+      <span class="tone-label">Тон:</span>
+      <button class="tone-btn" data-tone="friendly" aria-pressed="true">🙂 Дружелюбно</button>
+      <button class="tone-btn" data-tone="performance" aria-pressed="false">⚡ Результативно</button>
+    </div>
   </div>
 </header>
 <main class='page-main'><div class='container'>
 <h1>Культура и правила — Софт Альянс</h1>
-<section class="card"><h2>Ценности</h2>
-<ul><li>Клиент в центре, честность и открытость.</li><li>Дисциплина и ответственность («1 или 0», цена слова).</li><li>Проактивность и командность.</li></ul></section>
-<section class="panel"><h2>Ожидаемое поведение</h2>
-<ul><li>Говорим решениями, бережём ресурсы.</li><li>Даём и принимаем конструктивную обратную связь.</li></ul></section>
-</div></main></body></html>
+<section class="panel"><h2>Ценности</h2><div class='tone-block tone-friendly'><p>Говорим прямо и с заботой. Ошибки не прячем — исправляем и помогаем.</p></div><div class='tone-block tone-performance'><ul><li>«1 или 0»: договорённость выполнена/нет.</li><li>«Говорим решениями»: приходим с вариантом и сроком.</li><li>Time‑boxing и повестка на встречи.</li></ul></div></section>
+</div></main><script src='tone.js' defer></script></body></html>

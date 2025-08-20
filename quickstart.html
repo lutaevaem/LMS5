@@ -1,8 +1,9 @@
 <!DOCTYPE html><html lang='ru'><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>quickstart — Софт Альянс</title>
+  <title>quickstart</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tone.css">
 </head><body>
 <header class="site-header slim hideable" role="banner">
   <div class="bar">
@@ -29,20 +30,14 @@
       <a href="culture.html" class="icon-link" title="Культура" aria-label="Культура"><span class="i">🤝</span><span class="t">Культура</span></a>
       <a href="test.html" class="icon-link" title="Тест" aria-label="Тест"><span class="i">✅</span><span class="t">Тест</span></a>
     </nav>
+    <div class="tone-switch" role="group" aria-label="Переключатель тона">
+      <span class="tone-label">Тон:</span>
+      <button class="tone-btn" data-tone="friendly" aria-pressed="true">🙂 Дружелюбно</button>
+      <button class="tone-btn" data-tone="performance" aria-pressed="false">⚡ Результативно</button>
+    </div>
   </div>
 </header>
 <main class='page-main'><div class='container'>
 <h1>Быстрый старт — Софт Альянс</h1>
-<section class="card"><h2>День 1–3</h2>
-<ul><li>Доступы: почта, CRM, телефония, шаблоны.</li>
-<li>Навигатор новичка: встречи 1:1 с РОП и наставником, план 30‑60‑90.</li>
-<li>Первый список 30 компаний, 10 звонков.</li></ul></section>
-<section class="panel"><h2>Шпаргалка звонка</h2>
-<ol><li>Кто отвечает за закупку ПО/техники?</li>
-<li>Что закупали 3–6 мес? Когда следующая закупка?</li>
-<li>Отправлю расчёт/КП сегодня. Куда удобнее?</li></ol></section>
-<section class="note"><h2>CTA</h2>
-<ol><li>Назначь 2 встречи (онлайн/офлайн) на завтра.</li>
-<li>Подготовь 2 КП: Microsoft 365 и Windows 11 миграция.</li>
-<li>Заполни дашборд МОП и отправь наставнику скрин до 18:00.</li></ol></section>
-</div></main></body></html>
+<section class="card"><h2>Первые 3 дня</h2><div class='tone-block tone-friendly'><ul><li>Доступы и знакомство с наставником.</li><li>Список 30 компаний и 10 спокойных звонков по шпаргалке.</li><li>Два коротких КП — отправить сегодня.</li></ul></div><div class='tone-block tone-performance'><ol><li>10 звонков → 2 приценки → 1 встреча завтра.</li><li>КП по M365 и миграции на Windows 11 — в день звонка.</li><li>У каждой активности — «следующий шаг» в CRM.</li></ol></div></section>
+</div></main><script src='tone.js' defer></script></body></html>

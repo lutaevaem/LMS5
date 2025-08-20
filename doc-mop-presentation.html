@@ -1,8 +1,9 @@
 <!DOCTYPE html><html lang='ru'><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>doc-mop-presentation — Софт Альянс</title>
+  <title>doc-mop-presentation</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tone.css">
 </head><body>
 <header class="site-header slim hideable" role="banner">
   <div class="bar">
@@ -29,6 +30,11 @@
       <a href="culture.html" class="icon-link" title="Культура" aria-label="Культура"><span class="i">🤝</span><span class="t">Культура</span></a>
       <a href="test.html" class="icon-link" title="Тест" aria-label="Тест"><span class="i">✅</span><span class="t">Тест</span></a>
     </nav>
+    <div class="tone-switch" role="group" aria-label="Переключатель тона">
+      <span class="tone-label">Тон:</span>
+      <button class="tone-btn" data-tone="friendly" aria-pressed="true">🙂 Дружелюбно</button>
+      <button class="tone-btn" data-tone="performance" aria-pressed="false">⚡ Результативно</button>
+    </div>
   </div>
 </header>
-<main class='page-main'><div class='container'><h1>Презентация МОП — расшифровка</h1><p>О компании, формат продаж, ценности и ожидания.</p></div></main></body></html>
+<main class='page-main'><div class='container'><h1>Презентация МОП — расшифровка</h1><p>О компании, формат продаж, ценности и ожидания.</p></div></main><script src='tone.js' defer></script></body></html>

@@ -1,8 +1,9 @@
 <!DOCTYPE html><html lang='ru'><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>kpi — Софт Альянс</title>
+  <title>kpi</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tone.css">
 </head><body>
 <header class="site-header slim hideable" role="banner">
   <div class="bar">
@@ -29,14 +30,14 @@
       <a href="culture.html" class="icon-link" title="Культура" aria-label="Культура"><span class="i">🤝</span><span class="t">Культура</span></a>
       <a href="test.html" class="icon-link" title="Тест" aria-label="Тест"><span class="i">✅</span><span class="t">Тест</span></a>
     </nav>
+    <div class="tone-switch" role="group" aria-label="Переключатель тона">
+      <span class="tone-label">Тон:</span>
+      <button class="tone-btn" data-tone="friendly" aria-pressed="true">🙂 Дружелюбно</button>
+      <button class="tone-btn" data-tone="performance" aria-pressed="false">⚡ Результативно</button>
+    </div>
   </div>
 </header>
 <main class='page-main'><div class='container'>
 <h1>KPI — Софт Альянс</h1>
-<section class="card"><h2>Операционные KPI</h2>
-<ul><li>Звонки/день, КП/неделя, встречи/неделя.</li>
-<li>Скорость реакции на лиды, покрытие базы.</li></ul></section>
-<section class="panel"><h2>Бизнес‑KPI</h2>
-<ul><li>Выручка/маржа по сделкам.</li><li>Средний цикл сделки, конверсия по стадиям.</li></ul></section>
-<section class="note"><strong>CTA:</strong> заполни план на неделю в дашборде МОП и обсуди с РОПом.</section>
-</div></main></body></html>
+<section class="panel"><h2>Как смотреть на KPI</h2><div class='tone-block tone-friendly'><p>Смотрите на тенденцию и улучшайте по чуть‑чуть — без самокритики, но с заботой о результате.</p></div><div class='tone-block tone-performance'><ul><li>Операционные: звонки/КП/встречи, SLA реакции.</li><li>Бизнес: выручка/маржа, конверсия, цикл сделки.</li><li>Недельный план → корректировка по факту.</li></ul></div></section>
+</div></main><script src='tone.js' defer></script></body></html>

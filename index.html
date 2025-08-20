@@ -1,123 +1,43 @@
-<!DOCTYPE html><html lang="ru"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Главная — Софт Альянс</title>
-<link rel="stylesheet" href="style.css"></head><body>
-<header class="site-header" role="banner">
-  <div class="bar container">
-    <a class="brand" href="index.html" aria-label="Софт Альянс — на главную">
-      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
-        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#0ea5e9"/><stop offset="50%" stop-color="#34d399"/><stop offset="100%" stop-color="#6366f1"/></linearGradient></defs>
-        <circle cx="32" cy="32" r="30" fill="url(#g)"/>
-        <path d="M18 38c4 6 10 9 18 9 5 0 9-1 10-2 2-1 2-3 0-4-2-1-7-2-13-2-8 0-12-3-15-7-2-3-2-7 0-10 3-5 9-8 18-8 7 0 12 2 16 5l-4 5c-3-2-7-3-12-3-6 0-10 2-11 4-1 2 0 4 2 5 2 1 6 1 11 1 7 0 13 1 16 3 3 2 4 6 0 10-3 3-9 5-18 5-10 0-17-4-21-10l3-6z" fill="#fff" opacity=".95"/>
-      </svg>
-      <span class="title">Софт Альянс</span>
+<!DOCTYPE html><html lang='ru'><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>index</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tone.css">
+</head><body>
+<header class="site-header slim hideable" role="banner">
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="На главную">
+      <img class="logo" src="logo.jpg" alt="Софт Альянс">
+      <span class="brand-title">Софт Альянс</span>
     </a>
+    <nav class="icon-nav" role="navigation" aria-label="Основные разделы">
+      <a href="index.html" class="icon-link" title="Главная" aria-label="Главная"><span class="i">🏠</span><span class="t">Главная</span></a>
+      <a href="products.html" class="icon-link" title="Продукты" aria-label="Продукты"><span class="i">🧩</span><span class="t">Продукты</span></a>
+      <a href="crm.html" class="icon-link" title="CRM" aria-label="CRM"><span class="i">🗂️</span><span class="t">CRM</span></a>
+      <a href="quickstart.html" class="icon-link" title="Старт" aria-label="Старт"><span class="i">🚀</span><span class="t">Старт</span></a>
+      <a href="adaptation.html" class="icon-link" title="Адаптация" aria-label="Адаптация"><span class="i">🧭</span><span class="t">Адаптация</span></a>
+      <a href="sales.html" class="icon-link" title="Продажи" aria-label="Продажи"><span class="i">💼</span><span class="t">Продажи</span></a>
+      <a href="kpi.html" class="icon-link" title="KPI" aria-label="KPI"><span class="i">📊</span><span class="t">KPI</span></a>
+      <a href="tenders.html" class="icon-link" title="Тендеры" aria-label="Тендеры"><span class="i">🏛️</span><span class="t">Тендеры</span></a>
+      <a href="dashboard-mop.html" class="icon-link" title="МОП" aria-label="МОП"><span class="i">📈</span><span class="t">МОП</span></a>
+      <a href="dashboard-rop.html" class="icon-link" title="РОП" aria-label="РОП"><span class="i">🧠</span><span class="t">РОП</span></a>
+      <a href="offer.html" class="icon-link" title="Оффер" aria-label="Оффер"><span class="i">🎁</span><span class="t">Оффер</span></a>
+      <a href="offer-self-employed.html" class="icon-link" title="НПД" aria-label="НПД"><span class="i">🧾</span><span class="t">НПД</span></a>
+      <a href="mentorship.html" class="icon-link" title="Наставничество" aria-label="Наставничество"><span class="i">📘</span><span class="t">Наставничество</span></a>
+      <a href="privacy.html" class="icon-link" title="Политика" aria-label="Политика"><span class="i">⚖️</span><span class="t">Политика</span></a>
+      <a href="doc-newbie-book.html" class="icon-link" title="Книга" aria-label="Книга"><span class="i">📚</span><span class="t">Книга</span></a>
+      <a href="culture.html" class="icon-link" title="Культура" aria-label="Культура"><span class="i">🤝</span><span class="t">Культура</span></a>
+      <a href="test.html" class="icon-link" title="Тест" aria-label="Тест"><span class="i">✅</span><span class="t">Тест</span></a>
+    </nav>
+    <div class="tone-switch" role="group" aria-label="Переключатель тона">
+      <span class="tone-label">Тон:</span>
+      <button class="tone-btn" data-tone="friendly" aria-pressed="true">🙂 Дружелюбно</button>
+      <button class="tone-btn" data-tone="performance" aria-pressed="false">⚡ Результативно</button>
+    </div>
   </div>
-  <nav class="icon-nav container" aria-label="Разделы">
-    <a class="icon-link" href="index.html"><span class="i">🏠</span><span class="t">Главная</span></a>
-    <a class="icon-link" href="products.html"><span class="i">🧩</span><span class="t">Продукты</span></a>
-    <a class="icon-link" href="crm.html"><span class="i">🗂️</span><span class="t">CRM</span></a>
-    <a class="icon-link" href="quickstart.html"><span class="i">🚀</span><span class="t">Старт</span></a>
-    <a class="icon-link" href="adaptation.html"><span class="i">🧭</span><span class="t">Адаптация</span></a>
-    <a class="icon-link" href="sales.html"><span class="i">💼</span><span class="t">Продажи</span></a>
-    <a class="icon-link" href="kpi.html"><span class="i">📊</span><span class="t">KPI</span></a>
-    <a class="icon-link" href="tenders.html"><span class="i">🏛️</span><span class="t">Тендеры</span></a>
-    <a class="icon-link" href="dashboard-mop.html"><span class="i">📈</span><span class="t">МОП</span></a>
-    <a class="icon-link" href="dashboard-rop.html"><span class="i">🧠</span><span class="t">РОП</span></a>
-    <a class="icon-link" href="offer.html"><span class="i">🎁</span><span class="t">Оффер</span></a>
-    <a class="icon-link" href="offer-self-employed.html"><span class="i">🧾</span><span class="t">НПД</span></a>
-    <a class="icon-link" href="mentorship.html"><span class="i">📘</span><span class="t">Наставничество</span></a>
-    <a class="icon-link" href="privacy.html"><span class="i">⚖️</span><span class="t">Политика</span></a>
-    <a class="icon-link" href="doc-newbie-book.html"><span class="i">📚</span><span class="t">Книга</span></a>
-    <a class="icon-link" href="culture.html"><span class="i">🤝</span><span class="t">Культура</span></a>
-    <a class="icon-link" href="test.html"><span class="i">✅</span><span class="t">Тест</span></a>
-  </nav>
 </header>
-
-<section class="hero">
-  <svg class="art" viewBox="0 0 1200 400" preserveAspectRatio="none">
-    <defs><radialGradient id="rg" cx="50%" cy="50%" r="60%">
-      <stop offset="0%" stop-color="#34d399"/><stop offset="50%" stop-color="#0ea5e9"/><stop offset="100%" stop-color="#6366f1"/></radialGradient></defs>
-    <circle cx="600" cy="200" r="260" fill="url(#rg)"></circle>
-  </svg>
-  <div class="wrap container">
-    <h1>Добро пожаловать в LMS Софт Альянс</h1>
-    <p>Полная программа обучения для менеджеров по продажам</p>
-    <div class="actions">
-      <a class="btn" href="quickstart.html">Начать с «Быстрого старта»</a>
-      <a class="btn ghost" href="products.html">Посмотреть продукты</a>
-    </div>
-  </div>
-</section>
-<main class="page-main"><div class="container">
-<div class="card">
-  <h2>Как пользоваться порталом</h2>
-  <ol>
-    <li>Начните с <a href="quickstart.html">«Быстрого старта»</a> — 10 шагов до первых действий.</li>
-    <li>Пройдите <a href="sales.html">«Продажи»</a> — конструктор разговора, 6 этапов и реплики.</li>
-    <li>Сверьтесь с <a href="kpi.html">KPI</a> — прозрачные требования по активности и результатам.</li>
-    <li>Фиксируйте всё в <a href="crm.html">CRM</a> и работайте по дашбордам <a href="dashboard-mop.html">МОП</a>/<a href="dashboard-rop.html">РОП</a>.</li>
-    <li>Для закупок — раздел <a href="tenders.html">«Тендеры 44‑ФЗ/223‑ФЗ»</a>: чек‑листы, письма, риски.</li>
-  </ol>
-  <p class="note"><strong>Важно:</strong> цель обучения — первая уверенная сделка и устойчивая система работы. Вопросы приветствуются.</p>
-</div>
-<div class="grid cols-3">
-  <div class="panel"><h3>Быстрый старт</h3><p>Доступы → CRM → звонки → КП → обратная связь.</p><a class="btn" href="quickstart.html">Открыть</a></div>
-  <div class="panel"><h3>Продукты</h3><p>Категории решений, ценность и типовые боли клиентов.</p><a class="btn" href="products.html">Смотреть</a></div>
-  <div class="panel"><h3>Тендеры</h3><p>От заявки до контракта — без ошибок и штрафов.</p><a class="btn" href="tenders.html">Перейти</a></div>
-</div>
-
-
-<section class="card">
-  <h2>Зачем это бизнесу — 4 быстрых кейса</h2>
-  <div class="grid cols-2">
-    <div class="panel">
-      <h3>Microsoft 365 → порядок в коммуникациях</h3>
-      <p><strong>Ситуация:</strong> разные мессенджеры, потеря файлов.</p>
-      <p><strong>Решение:</strong> Teams + Exchange + SharePoint.</p>
-      <p><strong>Эффект:</strong> быстрый поиск, единые чаты/календари, контроль доступа.</p>
-    </div>
-    <div class="panel">
-      <h3>Windows 11 → стабильность парка ПК</h3>
-      <p><strong>Ситуация:</strong> «зоопарк» версий Windows, сбои.</p>
-      <p><strong>Решение:</strong> миграция до Windows 11 Pro/Enterprise, политика обновлений.</p>
-      <p><strong>Эффект:</strong> меньше инцидентов, предсказуемая поддержка.</p>
-    </div>
-    <div class="panel">
-      <h3>Azure Backup → защита от потери данных</h3>
-      <p><strong>Ситуация:</strong> нет резервных копий/офсайта.</p>
-      <p><strong>Решение:</strong> Azure Backup + регламент проверок восстановления.</p>
-      <p><strong>Эффект:</strong> быстрый откат, снижение рисков простоя.</p>
-    </div>
-    <div class="panel">
-      <h3>Defender for Business → безопасность</h3>
-      <p><strong>Ситуация:</strong> вирусы/фишинг через почту.</p>
-      <p><strong>Решение:</strong> защитные политики M365 + Defender.</p>
-      <p><strong>Эффект:</strong> меньше инцидентов, контроль устройств.</p>
-    </div>
-  </div>
-</section>
-</div>
-<section class="card">
-  <h2>Где ценность для клиента (коротко)</h2>
-  <div class="grid cols-3">
-    <div class="panel">
-      <h3>Microsoft 365</h3>
-      <p><strong>Боль:</strong> «зоопарк» мессенджеров, файлы разбросаны.</p>
-      <p><strong>Ценность:</strong> единые почта/файлы/команды (Teams, Exchange, SharePoint).</p>
-    </div>
-    <div class="panel">
-      <h3>Windows 11 миграция</h3>
-      <p><strong>Боль:</strong> устаревшие ПК и риски безопасности.</p>
-      <p><strong>Ценность:</strong> стабильность, поддержка устройств, совместимость.</p>
-    </div>
-    <div class="panel">
-      <h3>Azure Backup</h3>
-      <p><strong>Боль:</strong> нет бэкапов, простой при сбое.</p>
-      <p><strong>Ценность:</strong> быстрый откат, защита от потери данных.</p>
-    </div>
-  </div>
-</section>
-</main>
-<footer><div class="container">© Софт Альянс. Простые решения о сложном IT.</div></footer></body></html>
+<main class='page-main'><div class='container'>
+<h1>Софт Альянс — обучающая система</h1>
+<section class="card"><h2>Значение для клиента</h2><div class='tone-block tone-friendly'><p>Делаем ИТ понятным и спокойным: Microsoft 365, Windows 11, Azure Backup и устройства — всё работает вместе и без лишней боли.</p></div><div class='tone-block tone-performance'><ul><li><strong>Производительность</strong>: единая среда M365 → −20–40% потерь времени.</li><li><strong>Безопасность</strong>: Windows 11 + Defender → −30% инцидентов.</li><li><strong>Надёжность</strong>: Azure Backup → RTO — часы.</li></ul></div></section>
+</div></main><script src='tone.js' defer></script></body></html>

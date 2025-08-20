@@ -1,8 +1,9 @@
 <!DOCTYPE html><html lang='ru'><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>products — Софт Альянс</title>
+  <title>products</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tone.css">
 </head><body>
 <header class="site-header slim hideable" role="banner">
   <div class="bar">
@@ -29,17 +30,14 @@
       <a href="culture.html" class="icon-link" title="Культура" aria-label="Культура"><span class="i">🤝</span><span class="t">Культура</span></a>
       <a href="test.html" class="icon-link" title="Тест" aria-label="Тест"><span class="i">✅</span><span class="t">Тест</span></a>
     </nav>
+    <div class="tone-switch" role="group" aria-label="Переключатель тона">
+      <span class="tone-label">Тон:</span>
+      <button class="tone-btn" data-tone="friendly" aria-pressed="true">🙂 Дружелюбно</button>
+      <button class="tone-btn" data-tone="performance" aria-pressed="false">⚡ Результативно</button>
+    </div>
   </div>
 </header>
 <main class='page-main'><div class='container'>
 <h1>Продукты и услуги — Софт Альянс</h1>
-<section class="card"><h2>Категории</h2>
-<ul><li>Windows 10/11, Microsoft 365/Office, Windows Server, Azure, Dynamics 365, Defender.</li>
-<li>Surface и периферия.</li></ul></section>
-<section class="panel"><h2>Ситуации → Решения → Эффект</h2>
-<table class="table"><thead><tr><th>Ситуация</th><th>Решение</th><th>Эффект</th></tr></thead>
-<tbody><tr><td>Хаос в коммуникациях</td><td>M365</td><td>Единая среда</td></tr>
-<tr><td>Риски безопасности</td><td>Windows 11</td><td>Стабильность</td></tr>
-<tr><td>Нет бэкапов</td><td>Azure Backup</td><td>Откат за часы</td></tr></tbody></table></section>
-<section class="note"><strong>CTA:</strong> опиши задачу — предложим 2–3 варианта и бюджет.</section>
-</div></main></body></html>
+<section class="panel"><h2>Категории</h2><div class='tone-block tone-friendly'><p>Подберём решения Microsoft без лишних лицензий: M365/Office, Windows 10/11, Windows Server, Azure, Defender, Surface.</p></div><div class='tone-block tone-performance'><ul><li>M365/Office • Windows 10/11 • Server • Azure • Defender • Surface</li><li>Подбор редакций, план внедрения, сопровождение.</li></ul></div></section>
+</div></main><script src='tone.js' defer></script></body></html>

@@ -1,8 +1,9 @@
 <!DOCTYPE html><html lang='ru'><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>tenders — Софт Альянс</title>
+  <title>tenders</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tone.css">
 </head><body>
 <header class="site-header slim hideable" role="banner">
   <div class="bar">
@@ -29,24 +30,14 @@
       <a href="culture.html" class="icon-link" title="Культура" aria-label="Культура"><span class="i">🤝</span><span class="t">Культура</span></a>
       <a href="test.html" class="icon-link" title="Тест" aria-label="Тест"><span class="i">✅</span><span class="t">Тест</span></a>
     </nav>
+    <div class="tone-switch" role="group" aria-label="Переключатель тона">
+      <span class="tone-label">Тон:</span>
+      <button class="tone-btn" data-tone="friendly" aria-pressed="true">🙂 Дружелюбно</button>
+      <button class="tone-btn" data-tone="performance" aria-pressed="false">⚡ Результативно</button>
+    </div>
   </div>
 </header>
 <main class='page-main'><div class='container'>
 <h1>Тендеры 44‑ФЗ / 223‑ФЗ — Софт Альянс</h1>
-<section class="card"><h2>Чек‑лист заявки</h2>
-<ol><li>Требования к участнику, отсутствие РНП.</li>
-<li>ЭП/КЭП и полномочия.</li>
-<li>Техчасть по ТЗ, без лишней идентификации.</li>
-<li>Ценовая часть и обеспечение.</li>
-<li>Срок действия предложения, подача на ЭТП.</li></ol></section>
-<section class="panel"><h2>Матрица рисков</h2>
-<table class="table"><thead><tr><th>Риск</th><th>Вероятность</th><th>Влияние</th><th>Снижение</th><th>Стоп</th></tr></thead>
-<tbody><tr><td>Неточности в ТЗ</td><td>Средняя</td><td>Высокое</td><td>Разъяснения/протокол</td><td>Нет времени</td></tr>
-<tr><td>Демпинг</td><td>Средняя</td><td>Высокое</td><td>Обоснование цены</td><td>Ниже себестоимости</td></tr></tbody></table></section>
-<section class="note"><h2>Шаблоны писем</h2>
-<pre>Тема: Просьба о разъяснении документации по закупке №…
-Добрый день! Просим разъяснить пункты … (ЕИС/ЭТП).
-С уважением, команда Софт Альянс.
-</pre></section>
-<section class="note"><strong>CTA:</strong> создай карточку «тендер» в CRM и внеси все дедлайны.</section>
-</div></main></body></html>
+<section class="card"><h2>Подача без ошибок</h2><div class='tone-block tone-friendly'><p>Следуем чек‑листу и держим дедлайны. Шаблоны писем дадим — справишься!</p></div><div class='tone-block tone-performance'><ol><li>CRM‑карточка «тендер» + ссылка ЕИС/ЭТП.</li><li>Календарь: подача/разъяснения/обеспечение.</li><li>Роли и двойная проверка за 24 часа.</li></ol></div></section>
+</div></main><script src='tone.js' defer></script></body></html>

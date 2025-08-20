@@ -1,79 +1,43 @@
-<!DOCTYPE html><html lang="ru"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Дашборд МОП — Софт Альянс</title>
-<link rel="stylesheet" href="style.css"></head><body>
-<header class="site-header" role="banner">
-  <div class="bar container">
-    <a class="brand" href="index.html" aria-label="Софт Альянс — на главную">
-      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
-        <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#0ea5e9"/><stop offset="50%" stop-color="#34d399"/><stop offset="100%" stop-color="#6366f1"/></linearGradient></defs>
-        <circle cx="32" cy="32" r="30" fill="url(#g)"/>
-        <path d="M18 38c4 6 10 9 18 9 5 0 9-1 10-2 2-1 2-3 0-4-2-1-7-2-13-2-8 0-12-3-15-7-2-3-2-7 0-10 3-5 9-8 18-8 7 0 12 2 16 5l-4 5c-3-2-7-3-12-3-6 0-10 2-11 4-1 2 0 4 2 5 2 1 6 1 11 1 7 0 13 1 16 3 3 2 4 6 0 10-3 3-9 5-18 5-10 0-17-4-21-10l3-6z" fill="#fff" opacity=".95"/>
-      </svg>
-      <span class="title">Софт Альянс</span>
+<!DOCTYPE html><html lang='ru'><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dashboard-mop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tone.css">
+</head><body>
+<header class="site-header slim hideable" role="banner">
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="На главную">
+      <img class="logo" src="logo.jpg" alt="Софт Альянс">
+      <span class="brand-title">Софт Альянс</span>
     </a>
+    <nav class="icon-nav" role="navigation" aria-label="Основные разделы">
+      <a href="index.html" class="icon-link" title="Главная" aria-label="Главная"><span class="i">🏠</span><span class="t">Главная</span></a>
+      <a href="products.html" class="icon-link" title="Продукты" aria-label="Продукты"><span class="i">🧩</span><span class="t">Продукты</span></a>
+      <a href="crm.html" class="icon-link" title="CRM" aria-label="CRM"><span class="i">🗂️</span><span class="t">CRM</span></a>
+      <a href="quickstart.html" class="icon-link" title="Старт" aria-label="Старт"><span class="i">🚀</span><span class="t">Старт</span></a>
+      <a href="adaptation.html" class="icon-link" title="Адаптация" aria-label="Адаптация"><span class="i">🧭</span><span class="t">Адаптация</span></a>
+      <a href="sales.html" class="icon-link" title="Продажи" aria-label="Продажи"><span class="i">💼</span><span class="t">Продажи</span></a>
+      <a href="kpi.html" class="icon-link" title="KPI" aria-label="KPI"><span class="i">📊</span><span class="t">KPI</span></a>
+      <a href="tenders.html" class="icon-link" title="Тендеры" aria-label="Тендеры"><span class="i">🏛️</span><span class="t">Тендеры</span></a>
+      <a href="dashboard-mop.html" class="icon-link" title="МОП" aria-label="МОП"><span class="i">📈</span><span class="t">МОП</span></a>
+      <a href="dashboard-rop.html" class="icon-link" title="РОП" aria-label="РОП"><span class="i">🧠</span><span class="t">РОП</span></a>
+      <a href="offer.html" class="icon-link" title="Оффер" aria-label="Оффер"><span class="i">🎁</span><span class="t">Оффер</span></a>
+      <a href="offer-self-employed.html" class="icon-link" title="НПД" aria-label="НПД"><span class="i">🧾</span><span class="t">НПД</span></a>
+      <a href="mentorship.html" class="icon-link" title="Наставничество" aria-label="Наставничество"><span class="i">📘</span><span class="t">Наставничество</span></a>
+      <a href="privacy.html" class="icon-link" title="Политика" aria-label="Политика"><span class="i">⚖️</span><span class="t">Политика</span></a>
+      <a href="doc-newbie-book.html" class="icon-link" title="Книга" aria-label="Книга"><span class="i">📚</span><span class="t">Книга</span></a>
+      <a href="culture.html" class="icon-link" title="Культура" aria-label="Культура"><span class="i">🤝</span><span class="t">Культура</span></a>
+      <a href="test.html" class="icon-link" title="Тест" aria-label="Тест"><span class="i">✅</span><span class="t">Тест</span></a>
+    </nav>
+    <div class="tone-switch" role="group" aria-label="Переключатель тона">
+      <span class="tone-label">Тон:</span>
+      <button class="tone-btn" data-tone="friendly" aria-pressed="true">🙂 Дружелюбно</button>
+      <button class="tone-btn" data-tone="performance" aria-pressed="false">⚡ Результативно</button>
+    </div>
   </div>
-  <nav class="icon-nav container" aria-label="Разделы">
-    <a class="icon-link" href="index.html"><span class="i">🏠</span><span class="t">Главная</span></a>
-    <a class="icon-link" href="products.html"><span class="i">🧩</span><span class="t">Продукты</span></a>
-    <a class="icon-link" href="crm.html"><span class="i">🗂️</span><span class="t">CRM</span></a>
-    <a class="icon-link" href="quickstart.html"><span class="i">🚀</span><span class="t">Старт</span></a>
-    <a class="icon-link" href="adaptation.html"><span class="i">🧭</span><span class="t">Адаптация</span></a>
-    <a class="icon-link" href="sales.html"><span class="i">💼</span><span class="t">Продажи</span></a>
-    <a class="icon-link" href="kpi.html"><span class="i">📊</span><span class="t">KPI</span></a>
-    <a class="icon-link" href="tenders.html"><span class="i">🏛️</span><span class="t">Тендеры</span></a>
-    <a class="icon-link" href="dashboard-mop.html"><span class="i">📈</span><span class="t">МОП</span></a>
-    <a class="icon-link" href="dashboard-rop.html"><span class="i">🧠</span><span class="t">РОП</span></a>
-    <a class="icon-link" href="offer.html"><span class="i">🎁</span><span class="t">Оффер</span></a>
-    <a class="icon-link" href="offer-self-employed.html"><span class="i">🧾</span><span class="t">НПД</span></a>
-    <a class="icon-link" href="mentorship.html"><span class="i">📘</span><span class="t">Наставничество</span></a>
-    <a class="icon-link" href="privacy.html"><span class="i">⚖️</span><span class="t">Политика</span></a>
-    <a class="icon-link" href="doc-newbie-book.html"><span class="i">📚</span><span class="t">Книга</span></a>
-    <a class="icon-link" href="culture.html"><span class="i">🤝</span><span class="t">Культура</span></a>
-    <a class="icon-link" href="test.html"><span class="i">✅</span><span class="t">Тест</span></a>
-  </nav>
 </header>
-
-<main class="page-main"><div class="container">
-<h1>Дашборд МОП</h1>
-<p class="lead">Личная панель с автосохранением (в этом браузере).</p>
-<div class="grid cols-3">
-  <div class="panel"><h3>План дня (звонки/КП/приценки)</h3><div contenteditable="true" data-key="mop.plan.day">40 / 2 / 6</div></div>
-  <div class="panel"><h3>Факт дня</h3><div contenteditable="true" data-key="mop.fact.day">0</div></div>
-  <div class="panel"><h3>Выполнение, %</h3><div contenteditable="true" data-key="mop.complete.day">0</div></div>
-</div>
-<div class="grid cols-3">
-  <div class="panel"><h3>План месяца, ₽</h3><div contenteditable="true" data-key="mop.plan.month">5 000 000</div></div>
-  <div class="panel"><h3>Факт месяца, ₽</h3><div contenteditable="true" data-key="mop.fact.month">0</div></div>
-  <div class="panel"><h3>Выполнение, %</h3><div contenteditable="true" data-key="mop.complete.month">0</div></div>
-</div>
-<div class="card">
-  <h2>Спринты</h2>
-  <table class="table">
-    <thead><tr><th>Время</th><th>План звонков</th><th>Факт</th><th>База</th></tr></thead>
-    <tbody>
-      <tr><td>09:00–12:00</td><td contenteditable="true" data-key="mop.s1.plan">15</td><td contenteditable="true" data-key="mop.s1.fact">0</td><td contenteditable="true" data-key="mop.s1.base">холодная</td></tr>
-      <tr><td>12:00–15:00</td><td contenteditable="true" data-key="mop.s2.plan">15</td><td contenteditable="true" data-key="mop.s2.fact">0</td><td contenteditable="true" data-key="mop.s2.base">холодная</td></tr>
-      <tr><td>15:00–18:00</td><td contenteditable="true" data-key="mop.s3.plan">10</td><td contenteditable="true" data-key="mop.s3.fact">0</td><td contenteditable="true" data-key="mop.s3.base">холодная</td></tr>
-    </tbody>
-  </table>
-</div>
-<div class="panel">
-  <h2>Фокус на сегодня</h2>
-  <div contenteditable="true" data-key="mop.focus">Сформировать 5 приценок. Цель — 40 звонков.</div>
-</div>
-<div class="panel">
-  <h2>Список задач на сегодня</h2>
-  <p class="m-0">Заполните своими задачами (без названий компаний):</p>
-  <ol>
-    <li contenteditable="true" data-key="mop.task.1">—</li>
-    <li contenteditable="true" data-key="mop.task.2">—</li>
-    <li contenteditable="true" data-key="mop.task.3">—</li>
-    <li contenteditable="true" data-key="mop.task.4">—</li>
-    <li contenteditable="true" data-key="mop.task.5">—</li>
-  </ol>
-</div>
-<script>(function(){function r(e){var k=e.getAttribute('data-key');if(!k)return;var v=localStorage.getItem(k);if(v!==null)e.innerHTML=v;}function b(e){var k=e.getAttribute('data-key');if(!k)return;e.addEventListener('input',function(){localStorage.setItem(k,e.innerHTML);});}document.querySelectorAll('[contenteditable][data-key]').forEach(function(e){r(e);b(e);});})();</script>
-</div></main>
-<footer><div class="container">© Софт Альянс. Простые решения о сложном IT.</div></footer></body></html>
+<main class='page-main'><div class='container'>
+<h1>Дашборд МОП — Софт Альянс</h1>
+<section class="card"><h2>Фокус дня</h2><div class='tone-block tone-friendly'><p>Выбери один главный результат (например, 5 приценок) и спокойно доведи до конца.</p></div><div class='tone-block tone-performance'><ul><li>План: 40 звонков / 2 КП / 6 приценок.</li><li>Спринты: 9–12 / 12–15 / 15–18 — фиксируй план/факт.</li><li>У каждой активности — «следующий шаг».</li></ul></div></section>
+</div></main><script src='tone.js' defer></script></body></html>
