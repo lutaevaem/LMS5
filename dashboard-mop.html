@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Дашборд МОП — Софт Альянс</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Дашборд МОП — Софт Альянс</title>
+<link rel="stylesheet" href="style.css"></head><body>
 <header class="site-header" role="banner">
   <div class="bar container">
     <a class="brand" href="index.html" aria-label="Софт Альянс — на главную">
@@ -40,11 +35,9 @@
   </nav>
 </header>
 
-<main class="page-main">
-  <div class="container">
-
+<main class="page-main"><div class="container">
 <h1>Дашборд МОП</h1>
-<p class="lead">Поля ниже редактируются и сохраняются в этом браузере автоматически.</p>
+<p class="lead">Личная панель с автосохранением (в этом браузере).</p>
 <div class="grid cols-3">
   <div class="panel"><h3>План дня (звонки/КП/приценки)</h3><div contenteditable="true" data-key="mop.plan.day">40 / 2 / 6</div></div>
   <div class="panel"><h3>Факт дня</h3><div contenteditable="true" data-key="mop.fact.day">0</div></div>
@@ -67,20 +60,20 @@
   </table>
 </div>
 <div class="panel">
-  <h2>Фокус и клиенты на сегодня</h2>
-  <p><strong>Фокус:</strong> сделать 5 приценок (цель — 40 звонков).</p>
+  <h2>Фокус на сегодня</h2>
+  <div contenteditable="true" data-key="mop.focus">Сформировать 5 приценок. Цель — 40 звонков.</div>
+</div>
+<div class="panel">
+  <h2>Список задач на сегодня</h2>
+  <p class="m-0">Заполните своими задачами (без названий компаний):</p>
   <ol>
-    <li contenteditable="true" data-key="mop.client.1">МСК Система — посчитать новый запрос</li>
-    <li contenteditable="true" data-key="mop.client.2">Агротеххолдинг — уточнить по КП</li>
-    <li contenteditable="true" data-key="mop.client.3">Инфосага — уточнить сроки закупки</li>
+    <li contenteditable="true" data-key="mop.task.1">—</li>
+    <li contenteditable="true" data-key="mop.task.2">—</li>
+    <li contenteditable="true" data-key="mop.task.3">—</li>
+    <li contenteditable="true" data-key="mop.task.4">—</li>
+    <li contenteditable="true" data-key="mop.task.5">—</li>
   </ol>
 </div>
 <script>(function(){function r(e){var k=e.getAttribute('data-key');if(!k)return;var v=localStorage.getItem(k);if(v!==null)e.innerHTML=v;}function b(e){var k=e.getAttribute('data-key');if(!k)return;e.addEventListener('input',function(){localStorage.setItem(k,e.innerHTML);});}document.querySelectorAll('[contenteditable][data-key]').forEach(function(e){r(e);b(e);});})();</script>
-
-  </div>
-</main>
-<footer>
-  <div class="container">© Софт Альянс. Простые решения о сложном IT. </div>
-</footer>
-</body>
-</html>
+</div></main>
+<footer><div class="container">© Софт Альянс. Простые решения о сложном IT.</div></footer></body></html>
